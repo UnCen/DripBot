@@ -916,7 +916,7 @@ $dripBot = (function($, oldDripBot, isPro) {
 			temp = 3000;
 			getNewClicksTillBreak();
 		} else {
-			temp = temp * 20 + 10;
+			temp = temp * 5 + 5;
 			clicksLeft.set(clicksLeft.obj - 1);
 		}
 		return Math.floor(temp);
