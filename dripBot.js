@@ -327,7 +327,7 @@ $dripBot = (function($, oldDripBot, isPro) {
 		            color: '#808080'
 		        }],
 		        min: 0,
-		        max: 10
+		        max: 100
 		    },
 		    tooltip: {
 		        valueSuffix: ' CPS'
