@@ -981,8 +981,8 @@ $dripBot = (function($, oldDripBot, isPro) {
 		clickCup();
 
 		// Emergency clicks, sometimes game stalls.
-		new TimeoutMod(function() { clickCup(); }, 2000);
-		new TimeoutMod(function() { clickCup(); }, 5000);
+		new TimeoutMod(function() { clickCup(); }, 200);
+		new TimeoutMod(function() { clickCup(); }, 500);
 		new TimeoutMod(function() { start(); }, 500);
 
 		$('li#clicks a').click();
