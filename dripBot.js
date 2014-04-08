@@ -327,7 +327,7 @@ $dripBot = (function($, oldDripBot, isPro) {
 		            color: '#808080'
 		        }],
 		        min: 0,
-		        max: 20
+		        max: 10
 		    },
 		    tooltip: {
 		        valueSuffix: ' CPS'
@@ -912,10 +912,11 @@ $dripBot = (function($, oldDripBot, isPro) {
 	var getNewClickTimeout = function() {
 		var temp = rc4Rand.getRandomNumber();
 		if(clicksLeft.obj < 1) {
-			temp = temp * 3 * MINUTE + 7 * MINUTE;
+			//temp = temp * 3 * MINUTE + 7 * MINUTE;
+			temp = 3000;
 			getNewClicksTillBreak();
 		} else {
-			temp = temp * 50 + 20;
+			temp = temp * 20 + 20;
 			clicksLeft.set(clicksLeft.obj - 1);
 		}
 		return Math.floor(temp);
