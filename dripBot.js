@@ -51,9 +51,9 @@ $dripBot = (function($, oldDripBot, isPro) {
 		this.callbackTrue = callbackTrue;
 		this.callbackFalse = callbackFalse;
 
-		this.stopText = "Stop";
+		this.stopText = "Stop2";
 		this.stopClass = "btn-danger";
-		this.startText = "Start";
+		this.startText = "Start2";
 		this.startClass = "btn-success";
 
 		this.draw = function() {
