@@ -910,14 +910,15 @@ $dripBot = (function($, oldDripBot, isPro) {
 	];
 
 	var getNewClickTimeout = function() {
-		var temp = rc4Rand.getRandomNumber();
-		if(clicksLeft.obj < 1) {
+		//var temp = rc4Rand.getRandomNumber();
+		var temp = 35; //rc4Rand.getRandomNumber();
+		if(clicksLeft.obj < -1) {
 			//temp = temp * 3 * MINUTE + 7 * MINUTE;
 			temp = 3000;
 			getNewClicksTillBreak();
 		} else {
 			temp = temp * 0 + 40;
-			clicksLeft.set(clicksLeft.obj - 1);
+			//clicksLeft.set(clicksLeft.obj - 1);
 		}
 		return Math.floor(temp);
 	}
